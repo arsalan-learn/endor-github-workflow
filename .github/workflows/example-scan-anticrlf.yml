@@ -11,10 +11,11 @@ jobs:
       id-token: write      # allows authentication to Endor Labs using Actions OIDC JWT Token
       contents: read       # allows this job to clone org repos
     with:
-      git-url: "https://github.com/darrenpmeyer/logging-formatter-anticrlf.git" 
+      git-url: "https://github.com/snyk/cli.git" 
       namespace: ${{ vars.ENDOR_NAMESPACE }}
       upload-json: true
       is-pr: true
+      git-branch: "master"
     secrets:
       #endorlabs-api-auth: ${{ secrets.ENDORLABS_API_AUTH }}
       # to operate on a private repo, generate a github access token with `repo` rights
