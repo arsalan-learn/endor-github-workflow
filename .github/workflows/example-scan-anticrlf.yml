@@ -11,7 +11,7 @@ jobs:
       id-token: write      # allows authentication to Endor Labs using Actions OIDC JWT Token
       contents: read       # allows this job to clone org repos
     with:
-      git-url: "https://github.com/arsalan-learn/Spring4ShellDemo.git" 
+      git-url: "https://github.com/arsalan-learn/Spring4ShellDemo" 
       namespace: ${{ vars.ENDOR_NAMESPACE }}
       upload-json: true
       is-pr: true
