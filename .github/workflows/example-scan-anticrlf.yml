@@ -15,7 +15,6 @@ jobs:
       namespace: ${{ vars.ENDOR_NAMESPACE }}
       upload-json: true
       is-pr: true
-      git-branch: "master"
     secrets:
       #endorlabs-api-auth: ${{ secrets.ENDORLABS_API_AUTH }}
       # to operate on a private repo, generate a github access token with `repo` rights
